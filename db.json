@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "CSGO basics",
+      "description": "CSGO basics",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "name": "Grenades",
+      "description": "Grenades",
+      "color": "#00C86F"
+    },
+    {
+      "id": 3,
+      "name": "Pros tips",
+      "description": "Pros tips",
+      "color": "#9cd33b"
+    },
+    {
+      "id": 4,
+      "name": "Pro Highlights",
+      "description": "Pro Highlights",
+      "color": "orange"
+    }
+  ]
+}

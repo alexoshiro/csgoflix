@@ -1,8 +1,9 @@
-import sytled from 'styled-components'
+import sytled from 'styled-components';
 
 export const Button = sytled.button`
   color: var(--white);
   border: 1px solid var(--white);
+  background: var(--black);
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -19,4 +20,4 @@ export const Button = sytled.button`
   &:focus {
     opacity: .5;
   }
-`
+`;
