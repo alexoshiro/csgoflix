@@ -15,8 +15,10 @@ const CadastroCategoria = () => {
   const [category, setCategory] = useState(initialValues);
 
   useEffect(() => {
-    const url = 'http://localhost:8080/categories';
-    fetch(url).then(async (data) => {
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categories'
+      : 'https://csgoflixapp.herokuapp.com/categories';
+    fetch(URL).then(async (data) => {
       const json = await data.json();
       setCategories([...json]);
     });
