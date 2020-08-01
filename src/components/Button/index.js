@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import sytled from 'styled-components';
 
 export const Button = sytled.button`
@@ -19,5 +20,7 @@ export const Button = sytled.button`
   &:hover,
   &:focus {
     opacity: .5;
+    border-color: var(--primary);
+    color: var(--primary);
   }
 `;

@@ -1,19 +1,17 @@
-import React from 'react'
-import Menu from '../Menu'
-import Footer from '../Footer'
+import React from 'react';
+import Menu from '../Menu';
+import Footer from '../Footer';
 
-import * as S from './styled'
+import * as S from './styled';
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Menu />
-      <S.Main>
-        {children}
-      </S.Main>
-      <Footer />
-    </>
-  )
-}
+const Layout = ({ children, paddingAll }) => (
+  <>
+    <Menu />
+    <S.Main paddingAll={paddingAll}>
+      {children}
+    </S.Main>
+    <Footer />
+  </>
+);
 
-export default Layout
+export default Layout;
